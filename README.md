@@ -13,3 +13,17 @@
 
 ## code Snippet
 * Dismissable item from listview onClick
+
+```dart
+onClick:(){
+  removeItem(index);
+}
+
+ void removeItem(index) {
+    setState(() {
+      groupData.removeAt(index);
+    });
+  }
+N.B: Must be followed stateful widget 
+
+```
