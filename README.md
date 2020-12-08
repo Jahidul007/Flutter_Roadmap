@@ -24,6 +24,5 @@ onClick:(){
       groupData.removeAt(index);
     });
   }
-N.B: Must be followed stateful widget 
-
 ```
+N.B: Must be followed stateful widget 
