@@ -12,6 +12,8 @@
 * [How to remove scroll glow?](https://stackoverflow.com/questions/51119795/how-to-remove-scroll-glow)
 * [GetX](https://pub.dev/packages/get)
 * [Provider](https://pub.dev/packages/provider)
+* [Shimmer](https://pub.dev/packages/shimmer)
+* [Staggered](https://pub.dev/packages/flutter_staggered_grid_view)
 ## code Snippet
 * Dismissable item from listview onClick
 
