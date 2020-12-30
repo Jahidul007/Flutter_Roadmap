@@ -17,6 +17,7 @@
 ## code Snippet
 * Dismissable item from listview onClick
 
+
 ```dart
 onClick:(){
   removeItem(index);
