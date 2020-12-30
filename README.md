@@ -29,6 +29,6 @@ onClick:(){
   }
 ```
 N.B: Must be followed stateful widget 
+## Design Pattern
 
 ## Package
-[Customize straggered](https://www.sqlitetutorial.net/sqlite-create-table/)
