@@ -4,6 +4,20 @@
 
 ## Flutter Clean Architechture
 
+#### Data
+The Data layer consists of repository and data models. Repository is where the application gather all data related to the use case, either from local sources (Local DB, cookies) or remote sources (remote API). Data from the sources, usually in json format, is parsed to Dart object called models. It’s need to be done to make sure the application knows what data and variable it’s expecting.
+
+
+#### Domain
+Domain is the inner layer which shouldn’t be susceptible to the whims of changing data sources or porting our app to Angular Dart. It will contain only the core business logic (use cases) and business objects (entities).
+
+Repository classes act as the Data Layer and Domain Layer, each function on the repository class acts as the domain layer that specifies the use cases of the feature.
+
+#### Presentation
+Presentation is where the UI goes. You obviously need widgets to display something on the screen. These widgets is controlled by the state using various state management design pattern used in Flutter. In this project, I use BLoC as the state management.
+
+BLoC allows us to know exactly what data is given to the state. There is BLoC implementation that uses event classes to easily predict what state is the application in, but I use the simpler implementation of BLoC (just using streams) to shorten times for other that hasn’t been familiar to BLoC before. But I won’t dive too deep on BLoC because it’s another thing to write
+
 ![FLutter Clean Architechture](https://user-images.githubusercontent.com/56557098/103347921-9e9afb80-4ac2-11eb-8259-769d93bef2fd.jpg)
 
 ### Code to generate the folder pattern
