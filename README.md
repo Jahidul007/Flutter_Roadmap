@@ -47,7 +47,7 @@ void main(List<String> arguments) async {
 
   directoryList.forEach((key, value) async {
     await directoryList[key].forEach((element) async {
-      await makeFile("$key/$element/export"+"${element.toLowerCase()}s.dart");
+      await makeFile("$key/$element/export"+"${element.toLowerCase()}.dart");
     });
   });
 }
