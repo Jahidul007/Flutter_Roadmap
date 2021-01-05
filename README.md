@@ -22,7 +22,7 @@ BLoC allows us to know exactly what data is given to the state. There is BLoC im
 
 ### Code to generate the folder pattern
 ```dart
-
+import 'dart:convert';
 import 'dart:io';
 
 void main(List<String> arguments) async {
@@ -44,23 +44,65 @@ void main(List<String> arguments) async {
       'Pages',
     ],
   };
+  //Add your the list of pages in your app/website
 
-  directoryList.forEach((key, value) async {
+  List<String> pageList = [
+    /*Sample List*/
+    "OnBoardings",
+    "Sign In",
+    "Sign Up",
+    "Home",
+    "Item List",
+    "Settings",
+    "Help",
+    "Chat"
+  ];
+
+  ///This are the Exports for pages
+  List<String> exportPages = [];
+
+  ///Creating the directories
+  await directoryList.forEach((key, value) async {
     await directoryList[key].forEach((element) async {
-      await makeFile("$key/$element/export"+"${element.toLowerCase()}.dart");
+      await makeFile("$key/$element/export" +
+          "${element.replaceAll(' ', '_').toLowerCase()}.dart");
     });
   });
+
+  ///Creating the Functions and Widgets directories in every pages
+  await pageList.forEach((element) async {
+    ///Create The Page Folder
+    await makeFile("Presentation/Pages/" +
+        "${element.toLowerCase()}/${element.replaceAll(' ', '_').toLowerCase()}Page.dart");
+
+    ///Create The Page's Functions Folder
+    await makeFile(
+        "Presentation/Pages/${element.toLowerCase()}/Functions/${element.replaceAll(' ', '_').toLowerCase()}Functions.dart");
+
+    ///Create The Page's Widgets Folder
+    await makeFile(
+        "Presentation/Pages/${element.toLowerCase()}/Widgets/${element.replaceAll(' ', '_').toLowerCase()}Widgets.dart");
+
+    ///Add The page in the export file
+    await File("Presentation/Pages/exportpages.dart").writeAsStringSync(
+      "export '${element.toLowerCase()}/${element.replaceAll(' ', '_').toLowerCase()}Page.dart';\n",
+      mode: FileMode.append,
+    );
+  });
+
+  // print("Export Pages:\n" + exportPages);
 }
 
-void makeDir(String s) async {
+makeDir(String s) async {
   var dir = await Directory(s).create(recursive: true);
-  print(dir.path);
+  // print(dir.path);
 }
 
-void makeFile(String s) async {
+makeFile(String s) async {
   var dir = await File(s).create(recursive: true);
-  print(dir.path);
+  // print(dir.path);
 }
+
 
 
 ```
