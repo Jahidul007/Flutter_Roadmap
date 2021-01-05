@@ -58,9 +58,6 @@ void main(List<String> arguments) async {
     "Chat"
   ];
 
-  ///This are the Exports for pages
-  List<String> exportPages = [];
-
   ///Creating the directories
   await directoryList.forEach((key, value) async {
     await directoryList[key].forEach((element) async {
