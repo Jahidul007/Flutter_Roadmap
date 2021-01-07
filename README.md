@@ -117,6 +117,7 @@ makeFile(String s) async {
 * [Shimmer](https://pub.dev/packages/shimmer)
 * [Staggered](https://pub.dev/packages/flutter_staggered_grid_view)
 * [Reactive Programming or RxDart](https://www.youtube.com/watch?v=x4FKXw4Uvls&list=PL_Wj0DgxTlJc8E3ulwdekyVI4Wc819azh&index=1&ab_channel=ProgrammingAddict) 
+* [sync*, async*, yield, and yield*](https://jelenaaa.medium.com/what-are-sync-async-yield-and-yield-in-dart-defe57d06381)
 ## code Snippet
 * Dismissable item from listview onClick
 
