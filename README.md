@@ -104,6 +104,10 @@ makeFile(String s) async {
 
 ```
 
+## Reactive Programming with MVVM pattern
+![MVVM](https://user-images.githubusercontent.com/26745548/103972805-fa871380-5197-11eb-9275-1ce108c3e499.png)
+
+
 ## Courses
 * [The Complete 2020 Flutter Development Bootcamp with Dart](https://www.udemy.com/course/flutter-bootcamp-with-dart/)
 * [Santos Enoque](https://www.youtube.com/channel/UCRl79zOEtiLCglAFZJJzEZQ)
