@@ -108,8 +108,8 @@ makeFile(String s) async {
 It basically consists of three layers where the View which consists of all UI elements you see on the screen. It can also contain logic that only concerns the UI. The Model contains your business logic and backend connections. The ViewModel is the glue between both in that it processes and transforms data from the Model to a form the View can easily display. It offers functions (often called Commands) the View can call to trigger actions on the Model and provides events to signal the View about data changes.
 
 Important: The ViewModel knows nothing about the View which makes it testable and more than one View can use the same ViewModel. A ViewModel just offers services to the View (events, commands). The _View decides which it uses.
-![Several MVVM frameworks encapsulate the subscription of events and calling functions to update data in the ViewModel from the View using DataBindings](https://github-readme-quotes.herokuapp.com/quote?theme=dark&animation=grow_out_in&layout=default)
-Several MVVM frameworks encapsulate the subscription of events and calling functions to update data in the ViewModel from the View using DataBindings
+
+**"Several MVVM frameworks encapsulate the subscription of events and calling functions to update data in the ViewModel from the View using DataBindings"**
 
 To trigger any other action in the View besides data updates from the ViewModel gets tedious because you have to publish events and functions if the View should be able to retrieve data as a result of the event.
 
