@@ -138,6 +138,7 @@ What we really want is an App that just reacts on any event from the outside wit
 * [sync*, async*, yield, and yield*](https://jelenaaa.medium.com/what-are-sync-async-yield-and-yield-in-dart-defe57d06381)
 * [Flutter keys](https://youtu.be/kn0EOS-ZiIc)
 * [Multiscreen app](https://medium.com/flutter-community/clean-navigation-in-flutter-using-generated-routes-891bd6e000df)
+* [in flutter page textfield hidden by keyboard](https://stackoverflow.com/questions/54196213/in-flutter-page-textfield-hidden-by-keyboard)
 ## code Snippet
 * Dismissable item from listview onClick
 
