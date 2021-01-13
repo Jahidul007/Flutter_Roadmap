@@ -155,4 +155,19 @@ onClick:(){
 ```
 N.B: Must be followed stateful widget. 
 
+* Reorderable List
+```dart
+ void onReorder(int oldIndex, int newIndex) {
+    if (newIndex > oldIndex) {
+      newIndex -= 1;
+    }
+    setState(() {
+      String game = topTenGames[oldIndex];
+
+      topTenGames.removeAt(oldIndex);
+      topTenGames.insert(newIndex, game);
+    });
+  }
+  ```
+
 
