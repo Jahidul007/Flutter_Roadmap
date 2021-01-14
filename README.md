@@ -169,5 +169,7 @@ N.B: Must be followed stateful widget.
     });
   }
   ```
+ ## Issue and Error Handling
+ * [How to solve “No implementation found for method showToast” in Flutter?](https://stackoverflow.com/questions/62286575/how-to-solve-no-implementation-found-for-method-showtoast-in-flutter)
 
 
