@@ -130,7 +130,10 @@ What we really want is an App that just reacts on any event from the outside wit
 * [How to remove scroll glow?](https://stackoverflow.com/questions/51119795/how-to-remove-scroll-glow)
 * [GetX](https://pub.dev/packages/get)
 * [Provider](https://pub.dev/packages/provider)
-* [Bloc](https://bloclibrary.dev/#/gettingstarted)
+* Flutter bloc: <br/>
+ ** [Documents] (https://bloclibrary.dev/#/gettingstarted)
+ ** [Source Code](https://github.com/Jahidul007/hacker_news) <br/>
+ ** [Video](https://www.youtube.com/watch?v=27EP04T824Y&ab_channel=CODEVILLAGE) 
 * [Shimmer](https://pub.dev/packages/shimmer)
 * [Staggered](https://pub.dev/packages/flutter_staggered_grid_view)
 * Reactive Programming or RxDart: <br/>
