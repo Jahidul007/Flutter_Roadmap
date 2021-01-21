@@ -131,7 +131,7 @@ What we really want is an App that just reacts on any event from the outside wit
 * [GetX](https://pub.dev/packages/get)
 * [Provider](https://pub.dev/packages/provider)
 * Flutter bloc: <br/>
- ** [Documents](https://bloclibrary.dev/#/gettingstarted)<br/>
+ ** [Documents](https://bloclibrary.dev/#/flutterbloccoreconcepts)<br/>
  ** [Source Code](https://github.com/Jahidul007/hacker_news) <br/>
  ** [Video](https://www.youtube.com/watch?v=27EP04T824Y&ab_channel=CODEVILLAGE) 
 * [Shimmer](https://pub.dev/packages/shimmer)
