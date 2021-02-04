@@ -144,6 +144,7 @@ What we really want is an App that just reacts on any event from the outside wit
 * [Multiscreen app](https://medium.com/flutter-community/clean-navigation-in-flutter-using-generated-routes-891bd6e000df)
 * [in flutter page textfield hidden by keyboard](https://stackoverflow.com/questions/54196213/in-flutter-page-textfield-hidden-by-keyboard)
 * [Measuring your app's size](https://flutter.dev/docs/perf/app-size)
+* [Dropdown search](https://pub.dev/packages/dropdown_search)
 ## code Snippet
 * Dismissable item from listview onClick
 
