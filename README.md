@@ -180,5 +180,6 @@ N.B: Must be followed stateful widget.
  * [Flutter Multiple Blocs and NamedRoutes](https://stackoverflow.com/questions/61060354/flutter-multiple-blocs-and-namedroutes)
  * [StreamBuilder vs FlutterBuilder](https://stackoverflow.com/questions/50844519/flutter-streambuilder-vs-futurebuilder)
  * [`vsync` property in TabController constructor](https://stackoverflow.com/questions/46851245/vsync-property-in-tabcontroller-constructor)
+ * [Difference Between Deactivate and Dispose?](https://stackoverflow.com/questions/56387243/difference-between-deactivate-and-dispose)
 
 
