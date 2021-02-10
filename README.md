@@ -181,5 +181,6 @@ N.B: Must be followed stateful widget.
  * [StreamBuilder vs FlutterBuilder](https://stackoverflow.com/questions/50844519/flutter-streambuilder-vs-futurebuilder)
  * [`vsync` property in TabController constructor](https://stackoverflow.com/questions/46851245/vsync-property-in-tabcontroller-constructor)
  * [Difference Between Deactivate and Dispose?](https://stackoverflow.com/questions/56387243/difference-between-deactivate-and-dispose)
+ * [Populating stepper content based](https://stackoverflow.com/questions/59130685/flutter-populating-steps-content-based-on-previous-selection-on-stepper)
 
 
