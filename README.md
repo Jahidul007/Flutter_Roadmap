@@ -183,5 +183,6 @@ N.B: Must be followed stateful widget.
  * [Difference Between Deactivate and Dispose?](https://stackoverflow.com/questions/56387243/difference-between-deactivate-and-dispose)
  * [Populating stepper content based](https://stackoverflow.com/questions/59130685/flutter-populating-steps-content-based-on-previous-selection-on-stepper)
  * [How to build dependent dropdown menus in Flutter?](https://stackoverflow.com/questions/60323767/multiple-dependent-dropdown-in-flutter)
+ * [Flutter building apk: Duplicate class found in modules guava-26.0-android.jar and listenablefuture-1.0.jar](https://stackoverflow.com/questions/63711300/flutter-building-apk-duplicate-class-found-in-modules-guava-26-0-android-jar-an)
 
 
