@@ -175,6 +175,13 @@ N.B: Must be followed stateful widget.
     });
   }
   ```
+  
+  * iso8601 date/time convert to standard format
+```dart
+ var date = "2021-03-24T08:57:47.812" 
+ var dateTime =  DateTime.parse("${date.substring(0,16)}");
+ var stdTime =  DateFormat('MMM d, yy hh:mm a').format(dateTime).toString();
+  ```
  ## Issue and Error Handling
  * [How to solve “No implementation found for method showToast” in Flutter?](https://stackoverflow.com/questions/62286575/how-to-solve-no-implementation-found-for-method-showtoast-in-flutter)
  * [Flutter Multiple Blocs and NamedRoutes](https://stackoverflow.com/questions/61060354/flutter-multiple-blocs-and-namedroutes)
