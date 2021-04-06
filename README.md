@@ -182,6 +182,14 @@ N.B: Must be followed stateful widget.
  var dateTime =  DateTime.parse("${date.substring(0,16)}");
  var stdTime =  DateFormat('MMM d, yy hh:mm a').format(dateTime).toString();
   ```
+  
+  * convert tiem to local 
+   ```
+   var dateFormat = DateFormat("dd-MM-yyyy hh:mm aa"); // you can change the format here
+var utcDate = dateFormat.format(DateTime.parse(uTCTime)); // pass the UTC time here
+var localDate = dateFormat.parse(utcDate, true).toLocal().toString();
+String createdDate = dateFormat.format(DateTime.parse(localDate)); 
+   ```
  ## Issue and Error Handling
  * [How to solve “No implementation found for method showToast” in Flutter?](https://stackoverflow.com/questions/62286575/how-to-solve-no-implementation-found-for-method-showtoast-in-flutter)
  * [Flutter Multiple Blocs and NamedRoutes](https://stackoverflow.com/questions/61060354/flutter-multiple-blocs-and-namedroutes)
