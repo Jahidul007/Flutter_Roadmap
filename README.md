@@ -191,6 +191,49 @@ var utcDate = dateFormat.format(DateTime.parse(uTCTime)); // pass the UTC time h
 var localDate = dateFormat.parse(utcDate, true).toLocal().toString();
 String createdDate = dateFormat.format(DateTime.parse(localDate)); 
    ```
+   
+   * List to map of map 
+   ```
+   List<String> _options = [
+    'Arts & entertainment',
+    'Biographies & memoirs',
+  ];
+  
+  List<bool> _isOptionSelected = [
+    false,
+    false,
+  ];
+  
+
+  
+  Map<String, dynamic> map =  _options.asMap().map((key,value)=>MapEntry(value,{
+    'optionName':value,
+    'isOptionSelected':_isOptionSelected[key]
+  }));
+   ```
+   * map of map to list 
+   ```
+   
+List<String> _options = [];
+    List<bool> _isOptionSelected = [];
+    Map<String, Map<String, dynamic>> _isOptionMap = {
+      'Arts & entertainment': {
+        'optionName': 'Arts & entertainment',
+        'isOptionSelected': false,
+      },
+      'Biographies & memoirs': {
+        'optionName': 'Biographies & memoirs',
+        'isOptionSelected': false,
+      },
+    };
+    _isOptionMap.forEach((key, value) {
+        _options.add(value['optionName']);
+        _isOptionSelected.add(value['isOptionSelected']);
+      
+    });
+    print(_options);
+    print(_isOptionSelected);
+   ```
  ## Issue and Error Handling
  * [How to solve “No implementation found for method showToast” in Flutter?](https://stackoverflow.com/questions/62286575/how-to-solve-no-implementation-found-for-method-showtoast-in-flutter)
  * [Flutter Multiple Blocs and NamedRoutes](https://stackoverflow.com/questions/61060354/flutter-multiple-blocs-and-namedroutes)
