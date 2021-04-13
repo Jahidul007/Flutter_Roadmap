@@ -234,6 +234,36 @@ List<String> _options = [];
     print(_options);
     print(_isOptionSelected);
    ```
+   * How can I limit the size of a text field in flutter?
+   ```
+   TextEditingController _controller = new TextEditingController();
+String text = ""; // empty string to carry what was there before it 
+onChanged
+int maxLength = ...
+...
+new TextField(
+    controller: _controller,
+    onChange: (String newVal) {
+        if(newVal.length <= maxLength){
+            text = newVal;
+        }else{
+            _controller.value = new TextEditingValue(
+                text: text,
+                selection: new TextSelection(
+                    baseOffset: maxLength,
+                    extentOffset: maxLength,
+                    affinity: TextAffinity.downstream,
+                    isDirectional: false
+                ),
+                composing: new TextRange(
+                    start: 0, end: maxLength
+                )
+            );
+            _controller.text = text;
+        } 
+    }
+);
+   ```
  ## Issue and Error Handling
  * [How to solve “No implementation found for method showToast” in Flutter?](https://stackoverflow.com/questions/62286575/how-to-solve-no-implementation-found-for-method-showtoast-in-flutter)
  * [Flutter Multiple Blocs and NamedRoutes](https://stackoverflow.com/questions/61060354/flutter-multiple-blocs-and-namedroutes)
