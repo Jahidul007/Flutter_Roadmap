@@ -290,6 +290,43 @@ new TextField(
                       },
                     ),
    ```
+   * initialize alertBox when app open
+   ```
+   WidgetsBinding.instance.addPostFrameCallback((_) async {
+      await showDialog(
+        context: context,
+        builder: (BuildContext context) => AnimatedPadding(
+          padding: MediaQuery.of(context).viewInsets,
+          duration: const Duration(milliseconds: 100),
+          curve: Curves.decelerate,
+          child: LoadingWrap(
+            padding: EdgeInsets.all(20),
+            children: [
+              new AlertDialog(
+                insetPadding: EdgeInsets.all(20),
+                contentPadding: EdgeInsets.all(0),
+                content: Container(
+                  height: 200,
+                  width: MediaQuery.of(context).size.width,
+                  child: SingleChildScrollView(
+                    child: ListBody(
+                      children: <Widget>[
+                       -------------
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                actions: <Widget>[],
+              )
+            ],
+          ),
+        ),
+      );
+    });
+   ```
  ## Issue and Error Handling
  * [How to solve “No implementation found for method showToast” in Flutter?](https://stackoverflow.com/questions/62286575/how-to-solve-no-implementation-found-for-method-showtoast-in-flutter)
  * [Flutter Multiple Blocs and NamedRoutes](https://stackoverflow.com/questions/61060354/flutter-multiple-blocs-and-namedroutes)
