@@ -328,7 +328,6 @@ new TextField(
     });
    ```
    * Tooltip onTap rather than onLongPress possible?
-
     ```
     GlobalKey _toolTipKey = GlobalKey();
     GestureDetector(
@@ -344,7 +343,7 @@ new TextField(
                   height: 16,
                   message: "testing tooltip",
                   child: SvgPicture.asset("images/ic_info.svg"),),
-              ),
+              )
     ```
  ## Issue and Error Handling
  * [How to solve “No implementation found for method showToast” in Flutter?](https://stackoverflow.com/questions/62286575/how-to-solve-no-implementation-found-for-method-showtoast-in-flutter)
