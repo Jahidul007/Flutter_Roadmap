@@ -327,6 +327,25 @@ new TextField(
       );
     });
    ```
+   * Tooltip onTap rather than onLongPress possible?
+
+    ```
+    GlobalKey _toolTipKey = GlobalKey();
+    GestureDetector(
+                onTap: () {
+                  final dynamic _toolTip = _toolTipKey.currentState;
+                  _toolTip.ensureTooltipVisible();
+                },
+                child: Tooltip(
+                  key: _toolTipKey,
+                  waitDuration: Duration(seconds: 1),
+                  showDuration: Duration(seconds: 2),
+                  padding: EdgeInsets.all(5),
+                  height: 16,
+                  message: "testing tooltip",
+                  child: SvgPicture.asset("images/ic_info.svg"),),
+              ),
+    ```
  ## Issue and Error Handling
  * [How to solve “No implementation found for method showToast” in Flutter?](https://stackoverflow.com/questions/62286575/how-to-solve-no-implementation-found-for-method-showtoast-in-flutter)
  * [Flutter Multiple Blocs and NamedRoutes](https://stackoverflow.com/questions/61060354/flutter-multiple-blocs-and-namedroutes)
