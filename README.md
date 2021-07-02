@@ -347,6 +347,16 @@ new TextField(
           ),
         ],),
       )
+      
+ ```
+* Get Customize phone number format
+ ```
+ import 'package:flutter_masked_text/flutter_masked_text.dart';
+ String getPhoneNumber(String phoneNum)  {
+  var controller = new MaskedTextController(text: '', mask: '000-0000');
+  controller.updateText(phoneNum);
+  return controller.text.length >=1 ?"1-868-"+controller.text:"Not Available";
+}
  ```
             
  ## Issue and Error Handling
