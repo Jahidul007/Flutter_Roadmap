@@ -351,7 +351,9 @@ new TextField(
  ```
 * Get Customize phone number format
  ```
+ //flutter_masked_text: ^0.8.0
  import 'package:flutter_masked_text/flutter_masked_text.dart';
+ 
  String getPhoneNumber(String phoneNum)  {
   var controller = new MaskedTextController(text: '', mask: '000-0000');
   controller.updateText(phoneNum);
