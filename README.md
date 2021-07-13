@@ -360,6 +360,15 @@ new TextField(
   return controller.text.length >=1 ?"1-868-"+controller.text:"Not Available";
 }
  ```
+ * swap list value
+ ```
+ balanceTransferDescription
+          .where((element) => element.name.toLowerCase().contains("other"))
+          .forEach((element) {
+        balanceTransferDescription.remove(element);
+        balanceTransferDescription.insert(
+            balanceTransferDescription.length, element);
+ ```
             
  ## Issue and Error Handling
  * [How to solve “No implementation found for method showToast” in Flutter?](https://stackoverflow.com/questions/62286575/how-to-solve-no-implementation-found-for-method-showtoast-in-flutter)
