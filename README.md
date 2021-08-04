@@ -380,5 +380,10 @@ new TextField(
  * [How to build dependent dropdown menus in Flutter?](https://stackoverflow.com/questions/60323767/multiple-dependent-dropdown-in-flutter)
  * [Flutter building apk: Duplicate class found in modules guava-26.0-android.jar and listenablefuture-1.0.jar](https://stackoverflow.com/questions/63711300/flutter-building-apk-duplicate-class-found-in-modules-guava-26-0-android-jar-an)
  * [Exception: Concurrent modification during iteration: Instance(length:17) of '_GrowableList'](https://stackoverflow.com/questions/22409666/exception-concurrent-modification-during-iteration-instancelength17-of-gr)
+ * Unable to import module app_setings or missing your manifest.lock in Xcode - Flutter
+   >Try the following steps in terminal:
+    >1. flutter pub get
+    >2. pod init
+    >3. pod install
 
 
