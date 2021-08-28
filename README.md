@@ -101,8 +101,33 @@ makeFile(String s) async {
 }
 
 
-
 ```
+
+## Feature Driven Project Architecture
+      ├── lib
+      |   ├── posts
+      │   │   ├── bloc
+      │   │   │   └── post_bloc.dart
+      |   |   |   └── post_event.dart
+      |   |   |   └── post_state.dart
+      |   |   └── models
+      |   |   |   └── models.dart*
+      |   |   |   └── post.dart
+      │   │   └── view
+      │   │   |   ├── posts_page.dart
+      │   │   |   └── posts_list.dart
+      |   |   |   └── view.dart*
+      |   |   └── widgets
+      |   |   |   └── bottom_loader.dart
+      |   |   |   └── post_list_item.dart
+      |   |   |   └── widgets.dart*
+      │   │   ├── posts.dart*
+      │   ├── app.dart
+      │   ├── simple_bloc_observer.dart
+      │   └── main.dart
+      ├── pubspec.lock
+      ├── pubspec.yaml
+The application uses a feature-driven directory structure. This project structure enables us to scale the project by having self-contained features. In this example we will only have a single feature (the post feature) and it's split up into respective folders with barrel files, indicated by the asterisk (*).
 
 ## Reactive Programming with MVVM pattern
 It basically consists of three layers where the View which consists of all UI elements you see on the screen. It can also contain logic that only concerns the UI. The Model contains your business logic and backend connections. The ViewModel is the glue between both in that it processes and transforms data from the Model to a form the View can easily display. It offers functions (often called Commands) the View can call to trigger actions on the Model and provides events to signal the View about data changes.
@@ -381,9 +406,10 @@ new TextField(
  * [Flutter building apk: Duplicate class found in modules guava-26.0-android.jar and listenablefuture-1.0.jar](https://stackoverflow.com/questions/63711300/flutter-building-apk-duplicate-class-found-in-modules-guava-26-0-android-jar-an)
  * [Exception: Concurrent modification during iteration: Instance(length:17) of '_GrowableList'](https://stackoverflow.com/questions/22409666/exception-concurrent-modification-during-iteration-instancelength17-of-gr)
  * Unable to import module app_setings or missing your manifest.lock in Xcode - Flutter
-   >Try the following steps in terminal:
-    >1. flutter pub get
-    >2. pod init
-    >3. pod install
+     > Try the following steps in terminal:
+         >flutter pub get
+         >pod init
+         >pod install
+      
 
 
