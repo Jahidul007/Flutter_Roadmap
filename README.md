@@ -407,9 +407,9 @@ new TextField(
  * [Exception: Concurrent modification during iteration: Instance(length:17) of '_GrowableList'](https://stackoverflow.com/questions/22409666/exception-concurrent-modification-during-iteration-instancelength17-of-gr)
  * Unable to import module app_setings or missing your manifest.lock in Xcode - Flutter
      > Try the following steps in terminal:
-         >flutter pub get
-         >pod init
-         >pod install
+         > flutter pub get
+         > pod init
+         > pod install
       
 
 
