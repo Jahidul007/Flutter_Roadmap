@@ -394,6 +394,25 @@ new TextField(
         balanceTransferDescription.insert(
             balanceTransferDescription.length, element);
  ```
+* Capitalize first letter of the first word for each sentence
+```
+String capitalizeSentence(String s) {
+  // Each sentence becomes an array element
+  var sentences = s.split('.');
+  // Initialize string as empty string
+  var output = '';
+  // Loop through each sentence
+  for (var sen in sentences) {
+    // Trim leading and trailing whitespace
+    var trimmed = sen.trim();
+    // Capitalize first letter of current sentence
+    var capitalized = "${trimmed[0].toUpperCase() + trimmed.substring(1)}";
+    // Add current sentence to output with a period
+    output += capitalized + ". ";
+  }
+  return output;
+}
+```
             
  ## Issue and Error Handling
  * [How to solve “No implementation found for method showToast” in Flutter?](https://stackoverflow.com/questions/62286575/how-to-solve-no-implementation-found-for-method-showtoast-in-flutter)
