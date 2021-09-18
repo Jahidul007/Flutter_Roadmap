@@ -413,6 +413,11 @@ String capitalizeSentence(String s) {
   return output;
 }
 ```
+* Dart remove all brackets with integers between them
+```
+String s = "Hello, world![1] i am 'foo' [100]";
+print(s.replaceAll(new RegExp(r'\s*\[\d+]'),''));
+```
             
  ## Issue and Error Handling
  * [How to solve “No implementation found for method showToast” in Flutter?](https://stackoverflow.com/questions/62286575/how-to-solve-no-implementation-found-for-method-showtoast-in-flutter)
