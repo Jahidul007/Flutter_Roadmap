@@ -418,6 +418,28 @@ String capitalizeSentence(String s) {
 String s = "Hello, world![1] i am 'foo' [100]";
 print(s.replaceAll(new RegExp(r'\s*\[\d+]'),''));
 ```
+* Remove duplicate value from map
+```
+import 'dart:collection';
+
+void main() {
+  List users = [
+    {"userEmail": "tintu@gmail.com"},
+    {"userEmail": "john@gmail.com"},
+    {"userEmail": "tintu@gmail.com"},
+    {"userEmail": "rose@gmail.com"},
+    {"userEmail": "john@gmail.com"},
+  ];
+
+  var finalList = [
+    ...LinkedHashSet(
+      equals: (user1, user2) => user1['userEmail'] == user2['userEmail'],
+      hashCode: (user) => user['userEmail'].hashCode,
+    )..addAll(users)
+  ];
+  print(finalList);
+}
+```
             
  ## Issue and Error Handling
  * [How to solve “No implementation found for method showToast” in Flutter?](https://stackoverflow.com/questions/62286575/how-to-solve-no-implementation-found-for-method-showtoast-in-flutter)
