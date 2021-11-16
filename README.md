@@ -440,6 +440,19 @@ void main() {
   print(finalList);
 }
 ```
+
+* Call secondary color from theme data 
+```
+// define theme
+theme: ThemeData(
+          primaryColor: Colors.black,
+          colorScheme: ColorScheme.fromSwatch().copyWith(
+            secondary: Colors.green,
+          ),
+        ),
+ // call color 
+ color: Theme.of(context).colorScheme.secondary
+```
             
  ## Issue and Error Handling
  * [How to solve “No implementation found for method showToast” in Flutter?](https://stackoverflow.com/questions/62286575/how-to-solve-no-implementation-found-for-method-showtoast-in-flutter)
