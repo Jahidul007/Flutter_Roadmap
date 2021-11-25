@@ -1,6 +1,6 @@
 # Flutter_Road_Map_Documentation
 
-![FlutterRoadmap](https://user-images.githubusercontent.com/26745548/99886366-1d9c4900-2c66-11eb-91d5-6991b97eb984.png)
+
 
 ## Flutter Clean Architechture
 
