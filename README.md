@@ -22,6 +22,7 @@
 * [Measuring your app's size](https://flutter.dev/docs/perf/app-size)
 * [Dropdown search](https://pub.dev/packages/dropdown_search)
 * [Flutter push notification step by step](https://www.freecodecamp.org/news/how-to-add-push-notifications-to-flutter-app/)
+* [Flutter WEB download option and show in html view](https://github.com/Jahidul007/Flutter_Roadmap/blob/main/source/Download_html_and_show_view.dart)
 
 ## Courses
 * [The Complete 2020 Flutter Development Bootcamp with Dart](https://www.udemy.com/course/flutter-bootcamp-with-dart/)
