@@ -455,6 +455,26 @@ theme: ThemeData(
  // call color 
  color: Theme.of(context).colorScheme.secondary
 ```
+
+* Indentical methond in double, string, list 
+
+You got the false because a list is an indexable collection of objects with a length. In identical checks, two instances are the same or not but you can convert this instance into a string.
+
+```
+  List l1 = [1, 2, 3, 4];
+  List l2 = [1, 2, 3, 4];
+  print(identical(l1.toString(), l2.toString())); //true
+```
+For list comparison, you can use `listEquals`
+
+```
+import 'package:flutter/foundation.dart';
+void main() {
+  List<int> l1 = [1, 2, 3,4];
+  List<int> l2 = [1, 2, 3, 4];
+  print(listEquals(l1, l2)); //true
+}
+```
             
  ## Issue and Error Handling
  * [How to solve “No implementation found for method showToast” in Flutter?](https://stackoverflow.com/questions/62286575/how-to-solve-no-implementation-found-for-method-showtoast-in-flutter)
