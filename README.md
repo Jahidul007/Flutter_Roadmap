@@ -28,6 +28,7 @@
 ## Courses
 * [The Complete 2020 Flutter Development Bootcamp with Dart](https://www.udemy.com/course/flutter-bootcamp-with-dart/)
 * [Santos Enoque](https://www.youtube.com/channel/UCRl79zOEtiLCglAFZJJzEZQ)
+* [Vandad Nahavandipoor - Free Flutter Course](https://www.youtube.com/playlist?list=PL6yRaaP0WPkVtoeNIGqILtRAgd3h2CNpT)
 
 # Flutter_Road_Map_Documentation
 
