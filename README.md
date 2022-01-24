@@ -24,6 +24,8 @@
 * [Flutter push notification step by step](https://www.freecodecamp.org/news/how-to-add-push-notifications-to-flutter-app/)
 * [Flutter WEB download option and show in html view](https://github.com/Jahidul007/Flutter_Roadmap/blob/main/source/Download_html_and_show_view.dart)
 * [Flutter Hooks](https://pub.dev/packages/flutter_hooks)
+* [Flutter GraphQl](https://pub.dev/packages/graphql_flutter)
+* [Flutter grpc](https://pub.dev/packages/grpc)
 
 ## Courses
 * [The Complete 2020 Flutter Development Bootcamp with Dart](https://www.udemy.com/course/flutter-bootcamp-with-dart/)
