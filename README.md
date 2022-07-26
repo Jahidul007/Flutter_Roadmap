@@ -493,6 +493,7 @@ void main() {
  * [Flutter building apk: Duplicate class found in modules guava-26.0-android.jar and listenablefuture-1.0.jar](https://stackoverflow.com/questions/63711300/flutter-building-apk-duplicate-class-found-in-modules-guava-26-0-android-jar-an)
  * [Exception: Concurrent modification during iteration: Instance(length:17) of '_GrowableList'](https://stackoverflow.com/questions/22409666/exception-concurrent-modification-during-iteration-instancelength17-of-gr)
  * [regular-expressions with number](https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch06s07.html)
+ * [The purpose of function `runZoned` of 'dart:async'](https://stackoverflow.com/questions/21531924/the-purpose-of-function-runzoned-of-dartasync)
  * Unable to import module app_setings or missing your manifest.lock in Xcode - Flutter
      > Try the following steps in terminal:
          > flutter pub get
