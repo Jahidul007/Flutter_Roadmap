@@ -29,23 +29,11 @@ class DecimalTextInputFormatter extends TextInputFormatter {
           extentOffset: math.min(truncated.length, truncated.length + 1),
         );
       }
-      if (newValue.text.replaceAll("\$", "") == '') {
-        return newValue;
-      } else if (double.parse(newValue.text.replaceAll("\$", "")) < min) {
-        return const TextEditingValue().copyWith(text: min.toStringAsFixed(2),);
-      } else {
-        return double.parse(newValue.text.replaceAll("\$", "")) > max
-            ? TextEditingValue(
-          text: oldValue.text,
-          selection: newSelection,
-          composing: TextRange.empty,
-        )
-            : TextEditingValue(
-          text: truncated,
-          selection: newSelection,
-          composing: TextRange.empty,
-        );
-      }
+      return TextEditingValue(
+        text: truncated,
+        selection: newSelection,
+        composing: TextRange.empty,
+      );
     } else {
       return oldValue;
     }
