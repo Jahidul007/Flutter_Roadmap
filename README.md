@@ -481,6 +481,16 @@ void main() {
   print(listEquals(l1, l2)); //true
 }
 ```
+
+## Creating a Flutter/Dart package
+To create a Flutter package, run the below command:
+```
+flutter create --template=package flutter_pkg
+```
+  * The create subcommand is used to create a Flutter project or package. In this case, it will create a Flutter package
+  * The --template=package flag tells it to create a Flutter package
+  * The flutter_pkg is the folder in which the Flutter package will be created. You can name it anything you want
+
             
  ## Issue and Error Handling
  * [How to solve “No implementation found for method showToast” in Flutter?](https://stackoverflow.com/questions/62286575/how-to-solve-no-implementation-found-for-method-showtoast-in-flutter)
